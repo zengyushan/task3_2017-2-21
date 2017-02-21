@@ -1,0 +1,131 @@
+html,body{
+    /*去除掉到浏览器边界的空档*/
+    margin:0;
+    padding: 0;
+    font-size:62.5%;
+    overflow-x:hidden;
+}
+.clear{
+    clear: both;
+}
+.whole_div{
+    /*width加padding-bottom可以让高宽按比例变化*/
+    width:100%;
+    padding-bottom: 31.7%;
+    background-color: #68cdd5;
+}
+.top_bar{
+    /*依照父元素宽度的比例*/
+    padding-top: 3.12%;
+    margin-left: 5.46%;
+}
+.top_bar img{
+    width:8.43%;
+    /*max-width: 54px;*/
+}
+.logo{
+    margin-top: 6.56%;
+    margin-left: 30.9%
+}
+.logo img{
+    width:36.87%;
+}
+.intro_word{
+    margin-top: 19.06%;
+    margin-left:14.37%;
+    margin-right:15.62%;
+    font-family: "宋体";
+    /*font-size: 30px;!*/
+    font-size: 4.6vw;/*3rem*/
+    color: #ffffff;
+}
+.two_icon{
+    margin-top: 28.12%;
+    margin-left: 19.06%;
+    width: 63.59%;/*406.976px*/
+    /*border-style: solid;*/
+}
+.left{
+    float: left;
+    /*依照父元素two_icon的宽度设置一样的宽度*/
+    /*width:18.59%;*/
+    width: 29.24%;/*119px/406.9px(two_icon的宽)*/
+    /*background-color: #09BE07;*/
+    /*border-style: solid;*/
+}
+.right{
+    float: right;
+    /*依照父元素two_icon的宽度设置一样的宽度*/
+    width:29.24%;/*119px/406.9px*/
+    /*左边图片所在整体部分与右边的之间的距离*/
+    margin-right: 1.87%;
+    /*background-color: brown;*/
+    /*border-style: solid;*/
+}
+.two_icon img{
+    width:100%;
+}
+.left_icon{
+    width:70.58%;/*84px/119px*/
+    padding-bottom: 18.48%;
+    /*width: 29%;*/
+    margin:0 auto;
+    /*margin-left: 17px;*/
+    /*border-style: solid;*/
+}
+.left_name{
+    font-family: "宋体";
+    font-size: 3.7vw;
+    color: #ffffff;
+    text-align: center;
+    /*margin-top: 23px;*/
+}
+
+.right_icon{
+    width:70.58%;/*84px/119px*/
+    padding-bottom: 18.48%;
+    margin:0 auto;
+    /*border-style: solid;*/
+}
+.right_name{
+    font-family: "宋体";
+    color: #ffffff;
+    font-size: 3.7vw;
+    text-align: center;
+}
+/*媒体查询*/
+@media only screen and (max-width: 190px) {
+    .two_icon{
+        margin-top: 28.12%;
+        margin-left: 19.06%;
+        width: 63.59%;/*406.976px*/
+        /*border-style: solid;*/
+    }
+    .left{
+        float: left;
+        /*依照父元素two_icon的宽度设置一样的宽度*/
+        /*width:18.59%;*/
+        width: 35px;/*two_icon宽度=190*63.59%=121px,121px*29.24%=35px*/
+        /*background-color: #09BE07;*/
+    }
+    .left_icon{
+        width:70.58%;/*84px(设计稿的图标宽)/119px*/
+        padding-bottom: 18.48%;
+        /*width: 29%;*/
+        margin:0 auto;
+        /*margin-left: 17px;*/
+    }
+    .right{
+        float: right;
+        /*依照父元素two_icon的宽度设置一样的宽度*/
+        width:35px;
+        /*左边图片所在整体部分与右边的之间的距离*/
+        margin-right: 1.87%;/* 183/640=28.59% 28.59%*190=54px */
+        /*background-color: brown;*/
+    }
+    .right_icon{
+        width:70.58%;/*84px/119px*/
+        padding-bottom: 18.48%;
+        margin:0 auto;
+    }
+}
